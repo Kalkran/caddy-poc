@@ -1,0 +1,6 @@
+*.mx0.nl {
+    tls {
+        dns hetzner {env.HETZNER_TOKEN}
+    }
+    respond "Hi"
+}

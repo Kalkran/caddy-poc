@@ -1,0 +1,9 @@
+services:
+  caddy:
+    image: registry.ted.do/tools/custom-caddy:latest
+    build: .
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+    environment:
+      - HETZNER_TOKEN=
+
